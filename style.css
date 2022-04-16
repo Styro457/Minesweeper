@@ -45,6 +45,7 @@ body {
 
 .table-box.flag {
     background: red;
+    background:url("assets/images/flag.png") no-repeat;
 }
 
 .table-box.bomb {
