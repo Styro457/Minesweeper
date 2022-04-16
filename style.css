@@ -1,0 +1,95 @@
+body {
+    background: #d1d1d1;
+}
+.game {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+.table {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+}
+
+.table-line {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: right;
+    align-content: center;
+}
+
+.table-box {
+    width: 25px;
+    height: 25px;
+    border: outset white 3px;
+    background: #e8e8e8;
+    margin: 0px;
+
+    /* unselectable text */
+    -webkit-user-select: none; /* Safari */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE10+/Edge */
+    user-select: none; /* Standard */
+    /* ----------------- */
+
+}
+
+.table-box.hovered {
+    background: white;
+}
+
+.table-box.flag {
+    background: red;
+}
+
+.table-box.bomb {
+    /*background: blue;*/
+}
+
+.table-box.number {
+    background: #d1d1d1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: inset white 3px;
+    font-size: large;
+    font-weight: bolder;
+    font-family: Helvetica, sans-serif;
+}
+
+.table-box.number.one {
+    color: #263bc7;
+}
+
+.table-box.number.two {
+    color: #1fa141;
+}
+
+.table-box.number.three {
+    color: #d42433;
+}
+
+.table-box.number.four {
+    color: #550f8a;
+}
+
+.table-box.number.five {
+    color:#9c0b4a;
+}
+
+.table-box.number.six {
+    color: #068a7f;
+}
+
+.table-box.number.seven {
+    color: #004506;
+}
+
+.table-box.number.eight {
+    color: #3f0052;
+}
