@@ -200,6 +200,7 @@ function start() {
 }
 
 function win() {
+    stopTimer();
     console.log("WIN");
 }
 
