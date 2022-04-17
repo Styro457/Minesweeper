@@ -112,6 +112,7 @@ function buildTableHTML() {
 function onClick(elem, x, y) {
     if(!generatedBombs) {
         generateBombs(x, y);
+        startTimer();
         return;
     }
     if(table[y][x] === MINE) {
@@ -201,6 +202,7 @@ function gameOver() {
     while(tableDiv.firstElementChild != null) {
         tableDiv.firstElementChild.remove();
     }
+    stopTimer();
     start();
 }
 
