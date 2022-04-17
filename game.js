@@ -176,7 +176,13 @@ function onRightClick(elem, x, y) {
 
         playSound("flag_sound");
     }
-    else if(table[y][x] === FLAG_RIGHT || table[y][x] === FLAG_WRONG) {
+    else if(table[y][x] === FLAG_RIGHT) {
+        table[y][x] = MINE;
+        elem.classList.remove("flag");
+
+        playSound("flag_sound");
+    }
+    else if(table[y][x] === FLAG_WRONG) {
         table[y][x] = EMPTY;
         elem.classList.remove("flag");
 
