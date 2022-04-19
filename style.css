@@ -7,11 +7,15 @@
 
 body {
     background: var(--filled-box);
+
+    font-size: large;
+    font-weight: bolder;
+    font-family: Helvetica, sans-serif;
 }
 .game {
     width: 100%;
     height: 100%;
-    display: flex;
+    display: grid;
     justify-content: center;
 }
 .table {
@@ -99,4 +103,20 @@ body {
 
 .table-box.number.eight {
     color: #3f0052;
+}
+
+.timer-box {
+    width: 50px;
+    height: 100%;
+    background: var(--empty-box);
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    align-self: center;
+}
+
+.timer {
+    width: auto;
+    height: 100%;
+    margin: 5px;
 }
