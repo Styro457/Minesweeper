@@ -1,5 +1,11 @@
+:root {
+    --main-bg-color: #d1d1d1;
+    --empty-box: #e8e8e8;
+    --filled-box: #d1d1d1;
+}
+
 body {
-    background: #d1d1d1;
+    background: var(--filled-box);
 }
 .game {
     width: 100%;
@@ -27,7 +33,7 @@ body {
     width: 25px;
     height: 25px;
     border: outset white 3px;
-    background: #e8e8e8;
+    background: var(--empty-box);
     margin: 0px;
 
     /* unselectable text */
@@ -53,7 +59,7 @@ body {
 }
 
 .table-box.number {
-    background: #d1d1d1;
+    background: var(--filled-box);
     display: flex;
     justify-content: center;
     align-items: center;
