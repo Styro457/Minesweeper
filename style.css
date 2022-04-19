@@ -2,6 +2,7 @@
     --main-bg-color: #d1d1d1;
     --empty-box: #e8e8e8;
     --filled-box: #d1d1d1;
+    --box-size: 25px;
 }
 
 body {
@@ -30,8 +31,8 @@ body {
 }
 
 .table-box {
-    width: 25px;
-    height: 25px;
+    width: var(--box-size);
+    height: var(--box-size);
     border: outset white 3px;
     background: var(--empty-box);
     margin: 0px;
