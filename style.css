@@ -35,7 +35,6 @@ body {
     height: var(--box-size);
     border: outset white 3px;
     background: var(--empty-box);
-    margin: 0px;
 
     /* unselectable text */
     -webkit-user-select: none; /* Safari */
