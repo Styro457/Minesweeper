@@ -42,6 +42,14 @@ body {
     margin-right: 2vw;
     font-size: 120%;
     font-weight: normal;
+
+    box-shadow: inset 0 0 0 0 var(--gray);
+    transition: box-shadow .23s ease-in-out, color .23s ease-in-out;
+}
+
+.button:hover {
+    box-shadow: inset 0 -40px 0 0 var(--gray);
+    color: #ffffff;
 }
 
 .buttons {
