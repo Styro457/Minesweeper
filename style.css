@@ -32,14 +32,6 @@ body {
     padding-top: 8px;
 }
 
-.difficulty-buttons {
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    align-self: center;
-    padding-top: 5vh;
-}
-
 .button {
     width: 130px;
     height: 40px;
@@ -51,3 +43,32 @@ body {
     font-size: 120%;
     font-weight: normal;
 }
+
+.buttons {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    align-self: center;
+    height: auto;
+}
+
+.difficulty-buttons {
+    padding-top: 5vh;
+}
+
+.how-to-play-button-container {
+    justify-content: center;
+    align-content: center;
+    align-self: center;
+    opacity: 20%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 10vh;
+}
+
+.how-to-play-button {
+    width: 130px;
+    height: 30px;
+    font-size: 100%;
+}
+
