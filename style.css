@@ -37,6 +37,7 @@ body {
     justify-content: center;
     align-content: center;
     align-self: center;
+    padding-top: 5vh;
 }
 
 .difficulty-button {
