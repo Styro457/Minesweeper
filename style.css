@@ -15,3 +15,22 @@
     padding-right: 30px;
     padding-top: 8px;
 }
+
+.difficulty-buttons {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-self: center;
+}
+
+.difficulty-button {
+    width: 130px;
+    height: 40px;
+    background-color: transparent;
+    outline: #262626 solid;
+    border-radius: 6px;
+    border: none;
+    margin-right: 2vw;
+    font-size: 120%;
+    font-weight: normal;
+}
