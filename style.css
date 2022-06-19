@@ -1,3 +1,18 @@
+:root {
+    --main-bg-color: #d1d1d1;
+    --empty-box: #e8e8e8;
+    --filled-box: #d1d1d1;
+    --box-size: 25px;
+}
+
+body {
+    background: var(--filled-box);
+
+    font-size: large;
+    font-weight: bolder;
+    font-family: Helvetica, sans-serif;
+}
+
 .title {
     display: flex;
     justify-content: center;
