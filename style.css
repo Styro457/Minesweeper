@@ -1,5 +1,6 @@
 :root {
     --main-bg-color: #d1d1d1;
+    --gray: #262626;
     --empty-box: #e8e8e8;
     --filled-box: #d1d1d1;
     --box-size: 25px;
@@ -19,7 +20,7 @@ body {
     align-content: center;
     align-self: center;
     font-size: 100px;
-    color: #262626;
+    color: var(--gray);
     padding-top: 27vh;
 }
 
@@ -42,7 +43,7 @@ body {
     width: 130px;
     height: 40px;
     background-color: transparent;
-    outline: #262626 solid;
+    outline: var(--gray) solid;
     border-radius: 6px;
     border: none;
     margin-right: 2vw;
