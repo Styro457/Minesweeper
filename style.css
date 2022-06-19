@@ -6,7 +6,7 @@
 }
 
 body {
-    background: var(--filled-box);
+    background: var(--main-bg-color);
 
     font-size: large;
     font-weight: bolder;
