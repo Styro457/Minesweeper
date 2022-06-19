@@ -25,14 +25,6 @@
     height: var(--box-size);
     border: outset white 3px;
     background: var(--empty-box);
-
-    /* unselectable text */
-    -webkit-user-select: none; /* Safari */
-    -moz-user-select: none; /* Firefox */
-    -ms-user-select: none; /* IE10+/Edge */
-    user-select: none; /* Standard */
-    /* ----------------- */
-
 }
 
 .table-box.hovered {
