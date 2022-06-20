@@ -1,5 +1,7 @@
 # Minesweeper
-Minesweeper made in plain javascript
+**Online Minesweeper** made in plain javascript
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**->** [https://styro457.github.io/Minesweeper/](https://styro457.github.io/Minesweeper/)
 
 ### How to play
 
