@@ -94,3 +94,18 @@ body {
     font-size: 100%;
 }
 
+.github-logo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    width: 6vh;
+    height: 6vh;
+    padding: 2.5vh;
+
+    opacity: 45%;
+    transition: opacity .3s;
+}
+
+.github-logo:hover {
+    opacity: 80%;
+}
