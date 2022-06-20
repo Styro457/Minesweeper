@@ -15,3 +15,4 @@
 - Add bomb and moves count
 - Add mute button
 - Add win and lose animations
+- Click on an open cell to open the cells around it
