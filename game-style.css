@@ -1,5 +1,6 @@
 :root {
-    --box-size: 25px;
+    --box-sizeX: 25px;
+    --box-sizeY: 25px;
 }
 
 .game {
@@ -25,8 +26,8 @@
 }
 
 .table-box {
-    width: var(--box-size);
-    height: var(--box-size);
+    width: var(--box-sizeX);
+    height: var(--box-sizeY);
     border: outset white 3px;
     background: var(--empty-box);
 }
