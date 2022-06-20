@@ -30,6 +30,7 @@ body {
     font-size: 100px;
     color: var(--gray);
     padding-top: 27vh;
+    padding-bottom: 3vh;
 
     transition: padding-top .6s ease-in-out;
 }
@@ -76,7 +77,7 @@ body {
 }
 
 .difficulty-buttons {
-    padding-top: 5vh;
+    padding-top: 2vh;
 }
 
 .how-to-play-button-container {

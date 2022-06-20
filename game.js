@@ -1,6 +1,7 @@
 const table = [];
 const tableHTML = [];
 
+const gameDiv = document.getElementById("game");
 const tableDiv = document.getElementById("table");
 const title = document.getElementById("title");
 
@@ -198,6 +199,8 @@ function start(x, y, bombsAmount) {
         while(tableDiv.firstElementChild != null) {
             tableDiv.firstElementChild.remove();
         }
+        gameDiv.style.paddingBottom = '0';
+        gameDiv.style.paddingTop = '0';
     }
     started = true;
 
@@ -205,6 +208,8 @@ function start(x, y, bombsAmount) {
     sizeY = y;
     bombs = bombsAmount;
 
+    gameDiv.style.paddingTop = '2vh';
+    gameDiv.style.paddingBottom = '6vh';
     title.classList.add("title-top");
 
     table.length = 0;

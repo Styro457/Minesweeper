@@ -8,6 +8,7 @@
     height: 100%;
     display: grid;
     justify-content: center;
+    transition: padding-bottom .4s ease-in-out, padding-top .4s ease-in-out;
 }
 .table {
     width: 100%;
