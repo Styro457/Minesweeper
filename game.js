@@ -1,6 +1,9 @@
 const table = [];
 const tableHTML = [];
+
+const root = document.querySelector(':root');
 const tableDiv = document.getElementById("table");
+const title = document.getElementById("title");
 
 let sizeX = 16;
 let sizeY = 16;
@@ -194,6 +197,8 @@ function start(x, y, bombsAmount) {
     sizeY = y;
     bombs = bombsAmount;
 
+    title.classList.add("title-top");
+
     table.length = 0;
     tableHTML.length = 0;
     generatedBombs = false;
@@ -212,6 +217,5 @@ function gameOver() {
         tableDiv.firstElementChild.remove();
     }
     stopTimer();
-    start();
 }
 

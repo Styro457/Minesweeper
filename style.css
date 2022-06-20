@@ -30,6 +30,12 @@ body {
     font-size: 100px;
     color: var(--gray);
     padding-top: 27vh;
+
+    transition: padding-top .6s ease-in-out;
+}
+
+.title-top {
+    padding-top: 2vh;
 }
 
 .mine-icon {
