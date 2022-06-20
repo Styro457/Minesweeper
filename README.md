@@ -16,3 +16,4 @@
 - Add mute button
 - Add win and lose animations
 - Click on an open cell to open the cells around it
+- Add how to play panel
