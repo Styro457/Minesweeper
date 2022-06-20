@@ -2,11 +2,9 @@ const table = [];
 const tableHTML = [];
 const tableDiv = document.getElementById("table");
 
-// 16*16 40
-// 30*16 99
-const sizeX = 16;
-const sizeY = 16;
-const bombs = 40;
+let sizeX = 16;
+let sizeY = 16;
+let bombs = 40;
 
 let generatedBombs = false;
 
@@ -191,7 +189,11 @@ function onRightClick(elem, x, y) {
 
 }
 
-function start() {
+function start(x, y, bombsAmount) {
+    sizeX = x;
+    sizeY = y;
+    bombs = bombsAmount;
+
     table.length = 0;
     tableHTML.length = 0;
     generatedBombs = false;
@@ -212,7 +214,4 @@ function gameOver() {
     stopTimer();
     start();
 }
-
-
-start();
 
