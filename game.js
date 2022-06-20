@@ -1,7 +1,6 @@
 const table = [];
 const tableHTML = [];
 
-const root = document.querySelector(':root');
 const tableDiv = document.getElementById("table");
 const title = document.getElementById("title");
 
@@ -10,6 +9,7 @@ let sizeY = 16;
 let bombs = 40;
 
 let generatedBombs = false;
+let started = false;
 
 const numbers = ["zero", "one", "two", "three", "four", "five", "six", "seven", "eight"];
 const EMPTY = 0, MINE = -1, NUMBER = 1, FLAG_RIGHT = -2, FLAG_WRONG = 2;
@@ -88,6 +88,7 @@ function buildTableHTML() {
         for(let x = 0; x < sizeX; x++) {
             const box = document.createElement("div");
             box.classList.add("table-box");
+            box.classList.add("animation");
             box.onmouseenter = () => {
                 box.classList.add("hovered");
             }
@@ -193,6 +194,13 @@ function onRightClick(elem, x, y) {
 }
 
 function start(x, y, bombsAmount) {
+    if(started) {
+        while(tableDiv.firstElementChild != null) {
+            tableDiv.firstElementChild.remove();
+        }
+    }
+    started = true;
+
     sizeX = x;
     sizeY = y;
     bombs = bombsAmount;
@@ -204,6 +212,15 @@ function start(x, y, bombsAmount) {
     generatedBombs = false;
     buildTableArray();
     buildTableHTML();
+
+    setTimeout(startAnimation, 50);
+}
+
+function startAnimation() {
+    let cols = document.getElementsByClassName("table-box");
+    for(let i = 0; i < cols.length; i++) {
+        cols[i].classList.remove("animation");
+    }
 }
 
 function win() {

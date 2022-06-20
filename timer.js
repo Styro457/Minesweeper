@@ -1,9 +1,11 @@
 let isTimerActive = false;
 
+const timerBox = document.getElementsByClassName("timer-box")[0];
 const timer = document.getElementById("timer");
 
 function startTimer() {
     isTimerActive = true;
+    timerBox.classList.remove("animation");
     let time = 0;
     timer.innerHTML = "0:00";
     const x = setInterval(function () {

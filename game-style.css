@@ -30,6 +30,13 @@
     height: var(--box-sizeY);
     border: outset white 3px;
     background: var(--empty-box);
+    transition: height .4s ease-in-out, width .4s ease-in-out, border .3s ease-in-out;
+}
+
+.table-box.animation {
+    width: 0;
+    height: 0;
+    border: outset white 0px;
 }
 
 .table-box.hovered {
@@ -96,6 +103,12 @@
     justify-content: center;
     align-content: center;
     align-self: center;
+    transition: height .3s ease-in-out, font-size .3s ease-in-out;
+}
+
+.timer-box.animation {
+    height: 0;
+    font-size: 0;
 }
 
 .timer {
