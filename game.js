@@ -65,16 +65,13 @@ function getBoxNumber(x, y) {
 }
 
 function checkWin() {
-    console.log("CHECK WIN");
     for(let y = 0; y < sizeY; y++) {
         for(let x = 0; x < sizeX; x++) {
             if(table[y][x] === FLAG_WRONG || table[y][x] === EMPTY) {
-                console.log("NOT WIN");
                 return;
             }
         }
     }
-    console.log("!!!!!!!!!!!WIN!!!!!!!!!!");
     win();
 }
 
