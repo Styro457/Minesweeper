@@ -111,8 +111,11 @@ function buildTableHTML() {
     }
 }
 
-
 function onClick(elem, x, y) {
+    onClick(elem, x, y, false);
+}
+
+function onClick(elem, x, y, recursion) {
     if(!generatedBombs) {
         generateBombs(x, y);
         startTimer();
@@ -122,10 +125,50 @@ function onClick(elem, x, y) {
         gameOver();
         return;
     }
-    else if(table[y][x] !== EMPTY)
+    else if(table[y][x] !== EMPTY) {
+        let nr = tableHTML[y][x].innerText
+        if(nr === undefined || nr === 0)
+            return;
+        let flags = 0;
+        let noEmpty = true;
+        for(let i = -1; i <= 1; i++) {
+            for(let j = -1; j <= 1; j++) {
+                let xx = x+i;
+                if(xx < 0 || xx > sizeX)
+                    continue;
+                let yy = y+j;
+                if(yy < 0 || yy > sizeY)
+                    continue;
+                if(table[yy][xx] === FLAG_WRONG)
+                    gameOver();
+                if(table[yy][xx] === FLAG_RIGHT)
+                    flags++;
+                else if(table[yy][xx] === EMPTY)
+                    noEmpty = false;
+            }
+        }
+        if(noEmpty)
+            return;
+        if(flags.toString() !== nr)
+            return;
+        playSound("number_sound");
+        for(let i = -1; i <= 1; i++) {
+            for(let j = -1; j <= 1; j++) {
+                let xx = x+i;
+                if(xx < 0 || xx > sizeX)
+                    continue;
+                let yy = y+j;
+                if(yy < 0 || yy > sizeY)
+                    continue;
+                if(table[yy][xx] === EMPTY)
+                    onClick(tableHTML[yy][xx], xx, yy, true);
+            }
+        }
         return;
+    }
 
-    playSound("number_sound");
+    if(!recursion)
+        playSound("number_sound");
 
     table[y][x] = NUMBER;
     elem.classList.add("number");
