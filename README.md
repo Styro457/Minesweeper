@@ -16,3 +16,5 @@
 - Add mute button
 - Add win and lose animations
 - Add how to play panel
+- Add animation for table sizes under buttons
+- Add animation when clicking on an already open cell to open its neighbours
